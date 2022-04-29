@@ -111,7 +111,7 @@ public class UI {
         playerPanel.setLayout(new GridLayout(1,4));
         window.add(playerPanel);
 
-        hpLabel = new JLabel("HP");
+        hpLabel = new JLabel("HP:");
         hpLabel.setFont(normalfont);
         hpLabel.setForeground(Color.WHITE);
         playerPanel.add(hpLabel);
@@ -119,7 +119,7 @@ public class UI {
         hpNumberLabel.setForeground(Color.WHITE);
         hpNumberLabel.setFont(normalfont);
         playerPanel.add(hpNumberLabel);
-        weaponLabel = new JLabel("Weapon");
+        weaponLabel = new JLabel("Weapon:");
         weaponLabel.setForeground(Color.WHITE);
         weaponLabel.setFont(normalfont);
         playerPanel.add(weaponLabel);
