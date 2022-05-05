@@ -25,6 +25,7 @@ public class Story {
     }
         public void selectposition(String nextposition){
         switch(nextposition) {
+            case "townGate": townGate(); break;
             case "talkGuard": talkGuard();break;
             case "attackGuard": attackGuard();break;
             case "crossRoad": crossRoad();break;
@@ -32,13 +33,13 @@ public class Story {
 
         }
     }
-        }
+
     public void townGate() {
         ui.mainTextArea.setText("You are standing in the town gate.\nA guard is standing in front of you. \n\nWhat do you do?");
         ui.choice1.setText("Talk to the guard");
         ui.choice2.setText("Attack the guard");
         ui.choice3.setText("Leave the town");
-        ui.choice4.set_visible(false);
+        ui.choice4.setText("");
 
         game.nextposition1 = "talkGuard";
         game.nextposition2 = "attackGuard";
@@ -47,8 +48,19 @@ public class Story {
 
     }
     public void talkGuard(){
+        ui.mainTextArea.setText("Guard: Hello stranger. I don't recall seeing you around these parts before....\n\n I'm sorry but we do not allow strangers to enter our town.");
+        ui.choice1.setText(">");
+        ui.choice2.setText("");
+        ui.choice3.setText("");
+        ui.choice4.setText("");
+
+        game.nextposition1 = "townGate";
+        game.nextposition2 = "";
+        game.nextposition3 = "";
+        game.nextposition4 = "";
 
     }
+
     public void attackGuard(){
 
     }
