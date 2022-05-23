@@ -2,6 +2,8 @@ package Package01;
 
 import Package02.Weapon_Knife;
 
+import java.util.Locale;
+
 public class Story {
 
     Game game;
@@ -68,3 +70,4 @@ public class Story {
 
     }
 }
+
